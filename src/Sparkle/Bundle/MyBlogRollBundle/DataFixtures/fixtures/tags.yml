@@ -1,0 +1,16 @@
+## Tags Fixtures
+Tag:
+  tag1:
+    name: Chaussures    
+    visivle: True
+  tag2:
+    name: Moto
+    visible: True
+  tag3:
+    name: Web2.0
+  tag4:
+    name: Escarpin  
+  tag5:
+    name: Linux    
+  tag6:
+    name: Accident Moto

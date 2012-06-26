@@ -1,0 +1,22 @@
+## YAML Template.
+Blog:
+  blog1:
+    name: Blog de Betty
+    url:  www.blogBetty.com
+    urlRss: www.blogBetty.com/RSS
+    Owners: 
+      - owner1
+    
+  blog2:
+    name: Blog de Jean
+    url:  www.blogJeany.com
+    urlRss: www.blogJean.com/RSS
+    Owners: 
+      - owner2
+
+  blog3:
+    name: Blog de Jean
+    url:  www.blogJean.com
+    urlRss: www.blogJean.com/RSS
+    Owners: 
+      - owner3

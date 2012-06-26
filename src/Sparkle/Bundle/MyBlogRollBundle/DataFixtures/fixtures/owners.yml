@@ -1,0 +1,29 @@
+## Owner fixtures
+Owner:
+  owner1:
+    first_name: Jean
+    last_name:  Gui
+    age: 35
+    email: jean.gui@gmail.com
+    visible: True
+    Blogs:
+      - blog1
+    
+  owner2:
+    first_name: Dupont
+    last_name:  Pierre
+    age:  18
+    email:  pierre.dupont@gmail.com
+    visible: True
+    Blogs: 
+      - blog2
+
+  owner3:
+    first_name: Glandi
+    last_name:  Paul
+    age:  24
+    email:  Glandi.paul@gmail.com
+    visible: False
+    Blogs: 
+      - blog3
+    

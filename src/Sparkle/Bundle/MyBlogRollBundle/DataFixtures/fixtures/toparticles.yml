@@ -1,0 +1,11 @@
+## TopArticles Fixtures
+TopArticle:
+  toparticle1:
+    sortAuto: False
+    expires:  '2012-07-08 11:14:15'
+    Article:  article1
+  
+  toparticle2:
+    sortAuto: False
+    expires:  '2012-09-10 11:14:15'
+    Article:  article2

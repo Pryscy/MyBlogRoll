@@ -1,0 +1,17 @@
+## Categories Fixtures
+Category:
+  cat1:
+    name: Informatique
+    Tags:
+      - tag5
+      - tag3
+  cat2:
+    name: Mode
+    Tags:
+      - tag1
+      - tag4
+  cat3:
+    name: Sport
+    Tags:
+      - tag3
+  
