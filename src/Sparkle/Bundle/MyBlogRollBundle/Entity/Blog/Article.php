@@ -3,6 +3,7 @@
 namespace Sparkle\Bundle\MyBlogRollBundle\Entity\Blog;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Sparkle\Bundle\MyBlogRollBundle\Entity\Blog\Article

@@ -3,6 +3,7 @@
 namespace Sparkle\Bundle\MyBlogRollBundle\Entity\Blog;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Sparkle\Bundle\MyBlogRollBundle\Entity\Blog\Tag
@@ -28,13 +29,13 @@ class Tag
      */
     private $name;
     
-     /**
-     * @var Category $category
+    /**
+     * @var \Doctrine\Common\Collections\ArrayCollection $tags
      * 
-     * @ORM\OneToOne(targetEntity="Category")
+     * @ORM\ManyToMany(targetEntity="Category", mappedBy="tags")
      */
-    private $category;
-    
+    private $categories;
+  
      /**
      * @ORM\ManyToMany(targetEntity="Article", mappedBy="tags")
      **/
@@ -42,6 +43,7 @@ class Tag
 
     public function __construct() {
         $this->articles = new ArrayCollection();
+        $this->categories = new ArrayCollection();
     }    
 
 
@@ -113,5 +115,25 @@ class Tag
     public function getArticles()
     {
         return $this->articles;
+    }
+
+    /**
+     * Add categories
+     *
+     * @param Sparkle\Bundle\MyBlogRollBundle\Entity\Blog\Category $categories
+     */
+    public function addCategory(\Sparkle\Bundle\MyBlogRollBundle\Entity\Blog\Category $categories)
+    {
+        $this->categories[] = $categories;
+    }
+
+    /**
+     * Get categories
+     *
+     * @return Doctrine\Common\Collections\Collection 
+     */
+    public function getCategories()
+    {
+        return $this->categories;
     }
 }
