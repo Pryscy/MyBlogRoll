@@ -1,0 +1,13 @@
+parameters:
+    database_driver: pdo_pgsql
+    database_host: localhost
+    database_port: '5432'
+    database_name: myblogroll
+    database_user: myblogroll
+    database_password: myblogroll
+    mailer_transport: smtp
+    mailer_host: localhost
+    mailer_user: null
+    mailer_password: null
+    locale: fr
+    secret: bb73fcfd99c9c01cf46b1c62266b86197cda1632
